@@ -1,3 +1,5 @@
+// import { Fragment } from "react";
+
 // const config = {
 //   list: [
 //     {
@@ -94,8 +96,25 @@
 //         },
 //       ],
 //     },
+//     {
+//       title: "Work Options",
+//       items: [
+//         {
+//           title: "Solo Project",
+//           items: ["Single Video Pricing"],
+//         },
+//         {
+//           title: "Video Packs",
+//           items: ["Packages (2-20 Videos) with Variable Rates Based on Complexity"],
+//         },
+//         {
+//           title: "Monthly Work",
+//           items: ["Comprehensive Service (1-6 Months) with All Additional Options Included"],
+//         },
+//       ],
+//     },
 //   ],
-// };
+// } as const;
 
 export default function About() {
   return (
@@ -202,6 +221,29 @@ export default function About() {
             </p>
           </li>
         </ul>
+
+        {/* {config.list.map((item) => (
+          <Fragment key={item.title}>
+            <h2>{item.title}</h2>
+            <ul>
+              {item.items.map((item) => 
+                typeof item === 'string' ? (
+                  <li key={item}>{item}</li>
+                ) : (
+                  <li key={item.title}>
+                    <h3>{item.title}</h3>
+                    {'items' in item && (
+                      <ul>
+                        {item.items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+            </ul>
+          </Fragment>
+        ))} */}
       </section>
     </article>
   );

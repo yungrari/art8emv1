@@ -15,7 +15,7 @@ export default function Header() {
           pathname === "/" ? "text-white" : "text-black dark:text-white"
         }`}
       >
-        <Link href="/">ART8M</Link>
+        <Link href="/">ART.8M</Link>
         <button
           className="relative z-20"
           type="button"
@@ -29,8 +29,8 @@ export default function Header() {
         <nav
           className={
             pathname === "/"
-              ? "fixed z-10 inset-0 text-white bg-black/50 backdrop-blur-xl flex flex-col text-[16vw] pt-8 px-4 leading-[0.9] tracking-tight"
-              : "fixed z-10 inset-0 bg-white/50 dark:bg-black/50 backdrop-blur-lg flex flex-col text-[16vw] pt-8 px-4 leading-[0.9] tracking-tight"
+              ? "fixed z-10 inset-0 text-white bg-black/50 backdrop-blur-xl flex flex-col text-[2rem] leading-[1.15] font-[450] pt-24 px-4 tracking-tighter"
+              : "fixed z-10 inset-0 bg-white/50 dark:bg-black/50 backdrop-blur-lg flex flex-col text-[2rem] leading-[1.15] font-[450] pt-24 px-4 tracking-tighter"
           }
         >
           <Link
